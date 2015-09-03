@@ -12,6 +12,11 @@ describe Dog do
     expect(dog.fangs).to eq 2
   end
 
+  it "has paws" do
+    dog = Dog.new
+    expect(dog.paws).to eq 4
+  end
+
   it "is alived" do
     dog = Dog.new
     expect(dog).to be_alived
