@@ -11,6 +11,6 @@ class Foo
   end
 
   def multiply(a, b)
-    a * b + 3
+    a * b
   end
 end
