@@ -7,7 +7,7 @@ class Foo
   end
 
   def subtract(a, b)
-    a - b + 2
+    a - b
   end
 
   def multiply(a, b)
