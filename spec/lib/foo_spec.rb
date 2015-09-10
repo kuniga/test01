@@ -21,6 +21,6 @@ describe Foo do
 
   it "8 ひく 4 は 4" do
     foo = Foo.new
-    expect(foo.subtract(8, 4)).to equal(4)
+    expect(foo.subtract(8, 4)).to equal(3)
   end
 end
