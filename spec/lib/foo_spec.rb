@@ -14,6 +14,11 @@ describe Foo do
     expect(foo.respond_to? :subtract)
   end
 
+  it "has method 'multiply'" do
+    foo = Foo.new
+    expect(foo.respond_to? :multiply)
+  end
+
   it "2 たす 3 は 5" do
     foo = Foo.new
     expect(foo.add(2, 3)).to equal(5)
@@ -22,5 +27,10 @@ describe Foo do
   it "8 ひく 4 は 4" do
     foo = Foo.new
     expect(foo.subtract(8, 4)).to equal(4)
+  end
+
+  it "2 かける 4 は 8" do
+    foo = Foo.new
+    expect(foo.multiply(2, 4)).to equal(8)
   end
 end
