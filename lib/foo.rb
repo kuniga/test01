@@ -3,7 +3,7 @@ class Foo
   end
 
   def add(a, b)
-    a + b + 1
+    a + b
   end
 
   def subtract(a, b)
