@@ -6,17 +6,17 @@ require "foo"
 describe Foo do
   it "has method 'add'" do
     foo = Foo.new
-    expect(foo.respond_to? :add)
+    expect(foo.respond_to? :add).to be true
   end
 
   it "has method 'subtract'" do
     foo = Foo.new
-    expect(foo.respond_to? :subtract)
+    expect(foo.respond_to? :subtract).to be true
   end
 
   it "has method 'multiply'" do
     foo = Foo.new
-    expect(foo.respond_to? :multiply)
+    expect(foo.respond_to? :multiply).to be true
   end
 
   it "2 たす 3 は 5" do
