@@ -1,0 +1,14 @@
+name: service-containers
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test-services:
+    runs-on: ubuntu-latest
+    services:
+      redis:
+        image: redis
+    steps:
+      - uses: actions/checkout@v3
+      - run: ping redis
