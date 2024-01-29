@@ -11,4 +11,4 @@ jobs:
         image: redis
     steps:
       - uses: actions/checkout@v3
-      - run: nc -vz localhost 6379
+      - run: ps auxf
