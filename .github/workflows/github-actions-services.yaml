@@ -10,5 +10,5 @@ jobs:
       redis:
         image: redis
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: ps u `pgrep redis`
